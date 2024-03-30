@@ -95,4 +95,28 @@ main{
 /* footer content*/
  footer{
     background-color:orange ;
+
+
  }
+ /* Media query: tables and larger (768px and up)*/
+ @media screen and (min-width:760px){
+    /*Hader*/
+    nav{
+        display: block;
+        position:relative;
+        box-shadow: none;
+        width:fit-content;
+        padding-right: 1rem;
+    }
+    #menu{
+        display: flex;
+    }
+    #menu > li{
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display:none;
+    }
+ }
+    
+ 
