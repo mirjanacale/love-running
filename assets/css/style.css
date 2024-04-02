@@ -113,8 +113,9 @@ main {
     position: relative;
 }
 #cover-text {
-    background-color:rgba(241,109,107, .7) ;
-    font-size:130% ;
+      /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(241,109,107, .7) ;
+    font-size: 130%;
     position: absolute;
     bottom: 30px;
     width: 80%;
@@ -124,7 +125,7 @@ main {
 }
 
 #cover-text > h2, #cover-text > h3 {
-    color:#ffffff;
+    color: #ffffff;
 }
 
 /* Reasons section */
@@ -195,6 +196,7 @@ main {
     /* Override the heading colour set in general styles */
     color: #fafafa;
 }
+/*
 #times div{
     color:#fafafa;
     background-color:rgba(0, 0, 0, .6) ;
@@ -202,13 +204,14 @@ main {
     text-align: center;
 
 }
+*/
 /*gallery page*/
-#photos img{
-    width:100%;
-   line-height:1em; 
+#photos img {
+    width: 100%;
+    line-height: 1em; 
 }
 
-#photos{
+#photos {
     line-height: 0;
 }
 /* Form */
@@ -278,9 +281,9 @@ main {
 }
 /* Media query:  larger or landscape phones (576px and up)*/
 @media screen and (min-width:576) {
-    #photos{
-        column-count:2;
-        column-gap:0;
+    #photos {
+        column-count: 2;
+        column-gap: 0;
     }
     
 }
@@ -352,6 +355,29 @@ main {
       }
   
 }
+  /* Form */
+  #signup {
+    background-position: center;
+    position: relative;
+}
+
+#signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+}
+
+
 
 /* Larger devices (laptop and desktop, 992 and up)*/
 @media screen and (min-width:992px) {
